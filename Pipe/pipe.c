@@ -1,5 +1,3 @@
-//Pedro Antonio Maschieto Thezi
-//Daniel Venturini Pereira
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -14,9 +12,9 @@ void filho1()
 {
     close(fd[0]);
     printf("\nFilho1: calculando\n");
-    result1 = matriz[0][0] * matriz[1][1] * matriz[2][2] +
-                  matriz[0][1] * matriz[1][2] * matriz[2][0] +
-                  matriz[0][2] * matriz[1][0] * matriz[2][1];
+    result1 =   matriz[0][0] * matriz[1][1] * matriz[2][2] +
+                matriz[0][1] * matriz[1][2] * matriz[2][0] +
+                matriz[0][2] * matriz[1][0] * matriz[2][1];
     printf("Filho1: resultado: %d\n",result1);
     write(fd[1], &result1, sizeof(result1));
     close(fd[1]);
@@ -27,9 +25,9 @@ void filho2()
 {
     close(fd[0]);
     printf("\nFilho2: calculando\n");
-    result2 = (matriz[0][2] * matriz[1][1] * matriz[2][0] +
-                   matriz[0][0] * matriz[1][2] * matriz[2][1] +
-                   matriz[0][1] * matriz[1][0] * matriz[2][2]) * -1;
+    result2 =  (matriz[0][2] * matriz[1][1] * matriz[2][0] +
+        	matriz[0][0] * matriz[1][2] * matriz[2][1] +
+                matriz[0][1] * matriz[1][0] * matriz[2][2]) * -1;
     printf("Filho2: resultado: %d\n",result2);
     write(fd[1], &result2, sizeof(result2));
     close(fd[1]);
