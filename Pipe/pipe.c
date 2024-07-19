@@ -41,10 +41,9 @@ int main(int argc, char *argv[])
     fgets(line, sizeof(line), file);
     char *token = strtok(line, " ");
 
-    int i, j;
-    for (i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (j = 0; j < 3; j++)
+        for (int j = 0; j < 3; j++)
         {
             matriz[i][j] = atoi(token);
             token = strtok(NULL, " ");
@@ -53,9 +52,9 @@ int main(int argc, char *argv[])
     fclose(file);
 
     printf("Matriz: ");
-    for (i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (j = 0; j < 3; j++)
+        for (int j = 0; j < 3; j++)
         {
             printf("%d ", matriz[i][j]);
         }
