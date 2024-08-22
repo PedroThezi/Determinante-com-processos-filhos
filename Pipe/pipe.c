@@ -1,4 +1,4 @@
-//Pedro Antonio Maschieto Thezi
+    //Pedro Antonio Maschieto Thezi
 //Daniel Venturini Pereira
 #include <stdio.h>
 #include <stdlib.h>
@@ -38,7 +38,7 @@ void filho2()
 
 int main(int argc, char *argv[])
 {
-    FILE *file = fopen("matriz.txt", "r");
+    FILE *file = fopen("../Matriz/matriz.txt", "r");
     if (file == NULL) {
         perror("Erro ao abrir o arquivo");
         return 1;
