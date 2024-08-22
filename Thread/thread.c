@@ -34,7 +34,7 @@ void *filho2(void *arg) {
 }
 
 int main(int argc, char *argv[]) {
-    FILE *file = fopen("matriz.txt", "r");
+    FILE *file = fopen("../Matriz/matriz.txt", "r");
     char line[20];
     fgets(line, sizeof(line), file);
     char *token = strtok(line, " ");
@@ -67,6 +67,5 @@ int main(int argc, char *argv[]) {
     printf("\nO determinante da matriz eh: %d\n", result);
 
     pthread_mutex_destroy(&mutex);
-
     return 0;
 }
