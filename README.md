@@ -1,6 +1,6 @@
 # Determinante com processos filhos
 ***
-Repositório dedicado ao projeto de _SOII_ para calcular __determinante__ atráves de processos filhos pela *__Regra de Sarrus__*. Onde um filho calcula a diagonal principal e o outro filho calcula a diagonal secundária atraves de uma _variavel global_. A matriz tem tamnho [3][3] e está armazenada em um arqivo txt chamado `matriz.txt`. 
+Repositório dedicado ao projeto de _SOII_ para calcular __determinante__ através de processos filhos pela *__Regra de Sarrus__*. Onde um filho calcula a diagonal principal e o outro filho calcula a diagonal secundária atraves de uma _variavel global_. A matriz tem tamnho [3][3] e está armazenada em um arqivo txt chamado `matriz.txt`. 
 
 ## Determinante com filho thread.
 ***
